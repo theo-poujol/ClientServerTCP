@@ -8,10 +8,11 @@ public class Main {
 //        ClientTcpEcho clientTcpEcho = new ClientTcpEcho("10.203.9.145",50007);
 //        clientTcpEcho.lancerBW();
 
-        ServerTcpEcho serverTcpEcho = new ServerTcpEcho("10.203.9.145",50007,50);
-        serverTcpEcho.launchServer();
+//        ServerTcpEcho serverTcpEcho = new ServerTcpEcho("10.203.9.145",50007,50);
+//        serverTcpEcho.launchServer();
 
-
+        ServerTcpMulti serverTcpMulti = new ServerTcpMulti(50007,50);
+        serverTcpMulti.launchServer();
 
     }
 }

@@ -23,6 +23,7 @@ public class ServerTcpEcho {
         try {
 
             ServerSocket socketServer = new ServerSocket(this.port);
+            System.out.println("Serveur TCP lancé sur le port " + this.port);
             Socket socketClient;
 
             BufferedWriter bw;
