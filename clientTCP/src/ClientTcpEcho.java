@@ -27,9 +27,10 @@ public class ClientTcpEcho {
         try {
 
 
-            Socket socketClient = new Socket(this.hostname,this.port);
-            //socketClient.connect(new InetSocketAddress(this.hostname,this.port));
-            System.out.println("Connexion : Success...");
+            Socket socketClient = new Socket();
+
+            socketClient.connect(new InetSocketAddress(this.hostname,this.port));
+            System.out.println("Connection : Success...");
 
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(socketClient.getOutputStream()));
             BufferedReader br = new BufferedReader(new InputStreamReader(socketClient.getInputStream()));
